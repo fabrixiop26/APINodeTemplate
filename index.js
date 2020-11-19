@@ -1,8 +1,9 @@
 const router = require("express").Router();
 
-//base route
 router.get("/", (req, res) => {
-    res.send("Hello There!");
+    res.status(200).json({
+        message: "Holis"
+    });
 });
 
 module.exports = router;
